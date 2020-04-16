@@ -1,11 +1,9 @@
---# gurlekhilal
---Sayısal Tasarım Lab. 8-3encoder
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
+     library IEEE;
+     use IEEE.STD_LOGIC_1164.ALL;
 
-entity Encoder_83 is
-  Port(datain: in std_logic_vector(7 downto 0);
-       dataout: out std_logic_vector(2 downto 0));
+     entity Encoder_83 is
+     Port(datain: in std_logic_vector(7 downto 0);
+          dataout: out std_logic_vector(2 downto 0));
      end Encoder_83;
      
      Architecture behv of Encoder_83 is
@@ -31,5 +29,4 @@ entity Encoder_83 is
                end if;
            end process;
          end behv;
-
 
